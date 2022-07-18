@@ -22,10 +22,7 @@
 /*******************************************/
 
 body {
-     background: rgb(168,204,126);
-     background: linear-gradient(172deg, rgba(168,204,126,1) 10%, rgba(51,92,2,1) 28%, rgba(64,116,3,1) 36%, rgba(0,0,0,1) 90%);
-     background-repeat: no-repeat;  
-     color: whitesmoke;
+     background-color: #f7f3ee;
      min-height: 100vh;
 }
 
@@ -36,29 +33,47 @@ body {
 header {
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
+     justify-content: space-evenly;
      color: black;
      height: 10%;
+     background: rgb(224,249,196);
+     background: radial-gradient(circle, rgba(224,249,196,1) 10%, rgba(64,116,3,1) 88%, rgba(13,103,16,0.9640990185136554) 97%); 
+     background-repeat: no-repeat;  
+     font-family: 'Ibarra Real Nova', 'serif';
 }
 
-h3 {
+header > h1 {
+     font-family: 'Rye', 'serif';
+     font-weight: 400;
+}
+
+header > h3 {
      margin: 1.5em;
+}
+
+main {
+     display: flex;
+     justify-content: center;
 }
 
 .hero {
      display: flex;
      flex-direction: row;
      margin: 1.5em;
-     background-color: #f6eddf;
+     background-color: #f7f3ee;;
      color: black;
      border-radius: .125em;
      height: 80%;
+     max-width: 60%;
+     font-family: 'Ibarra Real Nova', 'serif';
+     align-items: center;
 }
 
 img {
-     max-height: 65vh;
+     max-height: 75vh;
      border-radius: .175em;
      margin: .75em;
+     
 }
 
 .hero > section {
@@ -80,6 +95,7 @@ img {
      display: flex;
      flex-direction: column;
      justify-content: space-around;
+     align-items: center;
 }
 
 footer {
